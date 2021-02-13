@@ -1,23 +1,22 @@
 import { Story, Meta } from '@storybook/vue'
 import Thumbnail from '@/components/common/Thumbnail.vue'
+import { Controls } from '@/libs/storybook'
 
 export default ((): Meta => ({
     title: 'Components/Thumbnail',
     component: Thumbnail,
     argTypes: {
-        color: { control: 'color' },
+        color: { control: Controls.color() },
         ratio: {
-            control: {
-                type: 'number',
+            control: Controls.number({
                 min: 0,
-            },
+            }),
             defaultValue: 1,
         },
         width: {
-            control: {
-                type: 'number',
+            control: Controls.number({
                 step: 10,
-            },
+            }),
             defaultValue: 300,
         },
     },
