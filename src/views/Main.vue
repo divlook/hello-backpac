@@ -1,19 +1,19 @@
 <template>
-    <div id="app">
-        <Main />
+    <div class="page-main">
+        <Card />
     </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import Main from '@/views/Main.vue'
+import Card from '@/components/Card.vue'
 
 @Component({
     components: {
-        Main,
+        Card,
     },
 })
-export default class App extends Vue {}
+export default class Main extends Vue {}
 </script>
 
 <style scoped lang="scss">
