@@ -15,7 +15,7 @@
 
 질문사항
 
-![ui_card.png](/docs/img/ui_card.png)
+![ui_card.png](/wiki/img/ui_card.png)
 
 - `세로형`  & `가로형` 레이아웃
 - 카드 별 없는 파트가 있을 수 있습니다
@@ -26,7 +26,7 @@
 
 # 과제 2. 입력 폼 UI
 
-![ui_textarea.png](/docs/img/ui_textarea.png)
+![ui_textarea.png](/wiki/img/ui_textarea.png)
 
 - 텍스트 입력 시 `남은 글자 수` 표시 (최대 글자 수 설정 가능하게)
 - UI 상태별 스타일 및 기능.
