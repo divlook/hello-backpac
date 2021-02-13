@@ -58,6 +58,12 @@ export default class Star extends Vue {
     })
     readonly height!: string
 
+    @Prop({
+        type: Boolean,
+        default: false,
+    })
+    readonly readonly!: boolean
+
     active = false
 
     @Watch('value')
@@ -73,6 +79,10 @@ export default class Star extends Vue {
     }
 
     onClick() {
+        if (this.readonly) {
+            return
+        }
+
         this.active = !this.active
 
         /**
