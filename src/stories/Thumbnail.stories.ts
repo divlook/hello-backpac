@@ -16,6 +16,7 @@ export default ((): Meta => ({
         ratio: {
             control: Controls.number({
                 min: 0,
+                step: 0.01,
             }),
             defaultValue: 1,
         },
