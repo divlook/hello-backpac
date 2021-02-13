@@ -1,23 +1,23 @@
 import { Story, Meta } from '@storybook/vue'
-import Thumbnail from '@/components/common/Thumbnail.vue'
 import { Controls } from '@/libs/storybook'
+import Thumbnail from '@/components/common/Thumbnail.vue'
 
 export default ((): Meta => ({
     title: 'Components/Thumbnail',
     component: Thumbnail,
     argTypes: {
+        width: {
+            control: Controls.number({
+                step: 10,
+            }),
+            defaultValue: 300,
+        },
         color: { control: Controls.color() },
         ratio: {
             control: Controls.number({
                 min: 0,
             }),
             defaultValue: 1,
-        },
-        width: {
-            control: Controls.number({
-                step: 10,
-            }),
-            defaultValue: 300,
         },
     },
 }))()
@@ -32,7 +32,7 @@ const Template: Story = (args, { argTypes }) => ({
                 :ratio="ratio"
                 :contain="contain"
                 :style="{
-                    width: \`\${width || 300}px\`,
+                    width: \`\${width}px\`,
                 }"
             />
         `,
