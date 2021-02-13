@@ -3,8 +3,14 @@
  */
 $palette: (
     'white': #fff,
-    'black': #000,
     'alto': #d9d8d8,
+    'bombay': #b5b5b6,
+    'dusty-gray': #999,
+    'mine-shaft': #333,
+    'black': #000,
+    'sunset-orange': #ff4b50,
+    'dove-gray': #666,
+    'supernova': #ffc501,
 );
 
 $color-white: map-get(
@@ -21,3 +27,53 @@ $color-alto: map-get(
     $map: $palette,
     $key: 'alto',
 );
+
+$color-bombay: map-get(
+    $map: $palette,
+    $key: 'bombay',
+);
+
+$color-mine-shaft: map-get(
+    $map: $palette,
+    $key: 'mine-shaft',
+);
+
+$color-sunset-orange: map-get(
+    $map: $palette,
+    $key: 'sunset-orange',
+);
+
+$color-dusty-gray: map-get(
+    $map: $palette,
+    $key: 'dusty-gray',
+);
+
+$color-dove-gray: map-get(
+    $map: $palette,
+    $key: 'dove-gray',
+);
+
+$color-supernova: map-get(
+    $map: $palette,
+    $key: 'supernova',
+);
+
+/*
+ * Utils
+ */
+@mixin ellipsis {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+@mixin multi-ellipsis($line: 1, $line-height: 1.2em) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+    line-height: $line-height;
+    height: $line * $line-height;
+}

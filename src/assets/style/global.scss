@@ -19,3 +19,69 @@ body {
         background-color: $color !important;
     }
 }
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+@for $spacing from 1 through 10 {
+    .m-#{$spacing} {
+        margin: #{$spacing / 4}rem !important;
+    }
+    .mr-#{$spacing} {
+        margin-right: #{$spacing / 4}rem !important;
+    }
+    .ml-#{$spacing} {
+        margin-left: #{$spacing / 4}rem !important;
+    }
+    .mt-#{$spacing} {
+        margin-top: #{$spacing / 4}rem !important;
+    }
+    .mb-#{$spacing} {
+        margin-bottom: #{$spacing / 4}rem !important;
+    }
+    .mx-#{$spacing} {
+        margin-left: #{$spacing / 4}rem !important;
+        margin-right: #{$spacing / 4}rem !important;
+    }
+    .my-#{$spacing} {
+        margin-top: #{$spacing / 4}rem !important;
+        margin-bottom: #{$spacing / 4}rem !important;
+    }
+    .p-#{$spacing} {
+        padding: #{$spacing / 4}rem !important;
+    }
+    .pr-#{$spacing} {
+        padding-right: #{$spacing / 4}rem !important;
+    }
+    .pl-#{$spacing} {
+        padding-left: #{$spacing / 4}rem !important;
+    }
+    .pt-#{$spacing} {
+        padding-top: #{$spacing / 4}rem !important;
+    }
+    .pb-#{$spacing} {
+        padding-bottom: #{$spacing / 4}rem !important;
+    }
+    .px-#{$spacing} {
+        padding-left: #{$spacing / 4}rem !important;
+        padding-right: #{$spacing / 4}rem !important;
+    }
+    .py-#{$spacing} {
+        padding-top: #{$spacing / 4}rem !important;
+        padding-bottom: #{$spacing / 4}rem !important;
+    }
+}
