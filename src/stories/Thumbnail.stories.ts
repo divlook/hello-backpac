@@ -27,13 +27,16 @@ const Template: Story = (args, { argTypes }) => ({
     props: Object.keys(argTypes),
     components: { Thumbnail },
     template: `
-        <Thumbnail
-            v-bind="$props"
-            :style="{
-                width: \`\${$props.width}px\`,
-            }"
-        />
-    `,
+            <Thumbnail
+                :image="image"
+                :color="color"
+                :ratio="ratio"
+                :contain="contain"
+                :style="{
+                    width: \`\${width || 300}px\`,
+                }"
+            />
+        `,
 })
 
 export const Default = Template.bind({})
