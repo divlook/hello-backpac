@@ -6,7 +6,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import Card from '@/components/Card.vue'
+import Card from '@/components/card/Card.vue'
 
 @Component({
     components: {
