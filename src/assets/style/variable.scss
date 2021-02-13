@@ -1,6 +1,23 @@
 /*
  * Color
  */
-$colors: 'white', 'black';
-$color-white: #fff;
-$color-black: #000;
+$palette: (
+    'white': #fff,
+    'black': #000,
+    'alto': #d9d8d8,
+);
+
+$color-white: map-get(
+    $map: $palette,
+    $key: 'white',
+);
+
+$color-black: map-get(
+    $map: $palette,
+    $key: 'black',
+);
+
+$color-alto: map-get(
+    $map: $palette,
+    $key: 'alto',
+);

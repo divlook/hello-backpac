@@ -10,12 +10,12 @@ body {
     font-family: Roboto, 'Noto Sans KR', sans-serif;
 }
 
-@each $color in $colors {
-    .color-#{$color} {
+@each $name, $color in $palette {
+    .color-#{$name} {
         color: $color !important;
     }
 
-    .bg-#{$color} {
+    .bg-#{$name} {
         background-color: $color !important;
     }
 }
