@@ -24,7 +24,12 @@ export default class Card extends Vue {
     })
     readonly bg!: string
 
-    @Prop()
+    /**
+     * 'small' | 'medium' | 'large'
+     */
+    @Prop({
+        default: 'small',
+    })
     readonly size!: 'small' | 'medium' | 'large'
 
     onClick() {
