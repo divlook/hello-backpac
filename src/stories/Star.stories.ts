@@ -6,7 +6,12 @@ export default ((): Meta => ({
     title: 'Components/Star',
     component: Star,
     argTypes: {
-        value: { control: Controls.boolean() },
+        value: {
+            control: Controls.boolean(),
+        },
+        color: {
+            control: Controls.color(),
+        },
         onClick: { action: 'clicked' },
     },
 }))()
@@ -38,4 +43,9 @@ Size.args = {
 export const Readonly = Template.bind({})
 Readonly.args = {
     readonly: true,
+}
+
+export const Color = Template.bind({})
+Color.args = {
+    color: '#1481DD',
 }

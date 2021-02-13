@@ -11,7 +11,7 @@
             v-show="active"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
-            fill="black"
+            :fill="color"
             width="18px"
             height="18px"
         >
@@ -25,7 +25,7 @@
             v-show="!active"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
-            fill="black"
+            :fill="color"
             width="18px"
             height="18px"
         >
@@ -57,6 +57,12 @@ export default class Star extends Vue {
         type: String,
     })
     readonly height!: string
+
+    @Prop({
+        type: String,
+        default: '#ffc501',
+    })
+    readonly color!: string
 
     @Prop({
         type: Boolean,
