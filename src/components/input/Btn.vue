@@ -1,5 +1,5 @@
 <template>
-    <button class="ui-btn" :disabled="disabled" @click="onClick">
+    <button class="ui-btn" :type="type" :disabled="disabled" @click="onClick">
         <slot />
     </button>
 </template>
@@ -9,6 +9,15 @@ import { Component, Prop, Vue } from 'vue-property-decorator'
 
 @Component
 export default class Btn extends Vue {
+    /**
+     * - type : 'button' | 'submit'
+     */
+    @Prop({
+        type: String,
+        default: 'button',
+    })
+    readonly type!: 'button' | 'submit'
+
     @Prop({
         type: Boolean,
         default: false,

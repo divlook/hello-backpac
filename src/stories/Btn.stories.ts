@@ -9,6 +9,10 @@ export default ((): Meta => ({
         label: {
             control: Controls.text(),
         },
+        type: {
+            control: Controls.select(['button', 'submit']),
+            defaultValue: 'button',
+        },
         disabled: {
             control: Controls.boolean(),
             defaultValue: false,
