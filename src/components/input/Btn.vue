@@ -32,7 +32,7 @@ export default class Btn extends Vue {
 @import '@/assets/style/variable.scss';
 
 .ui-btn {
-    display: inline-flex;
+    display: inline-block;
     border: 0;
     border-radius: 4px;
     background: $color-orange;
