@@ -64,7 +64,7 @@ export default class TextField extends Vue {
 
     @Prop({
         type: Number,
-        default: 1,
+        default: 3,
     })
     readonly rows!: number
 

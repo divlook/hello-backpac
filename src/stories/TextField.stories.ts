@@ -38,16 +38,16 @@ const Template: Story = (args, { argTypes }) => ({
         rawValue: args.value,
     }),
     template: `
-            <TextField
-                v-model="rawValue"
-                :placeholder="placeholder"
-                :disabled="disabled"
-                :readonly="readonly"
-                :rows="rows"
-                @input="onInput"
-                @change="onChange"
-            />
-        `,
+        <TextField
+            v-model="rawValue"
+            :placeholder="placeholder"
+            :disabled="disabled"
+            :readonly="readonly"
+            :rows="rows"
+            @input="onInput"
+            @change="onChange"
+        />
+    `,
 })
 
 export const Default = Template.bind({})
