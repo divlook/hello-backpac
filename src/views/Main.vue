@@ -115,7 +115,6 @@ export default class Main extends Vue {
 @import '@/assets/style/variable.scss';
 
 .page-main {
-    margin: -1rem;
     height: 100%;
 
     .main-container {

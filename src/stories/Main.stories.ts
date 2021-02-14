@@ -5,6 +5,9 @@ export default ((): Meta => ({
     title: 'Views/Main',
     component: Main,
     argTypes: {},
+    parameters: {
+        layout: 'none',
+    },
 }))()
 
 const Template: Story = (args, { argTypes }) => ({

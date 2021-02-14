@@ -18,8 +18,4 @@ export default class App extends Vue {}
 
 <style scoped lang="scss">
 @import '@/assets/style/variable.scss';
-
-#app {
-    padding: 1rem;
-}
 </style>
