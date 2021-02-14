@@ -48,11 +48,11 @@
                 <div class="price-fixed">{{ moneyFormat(price) }}</div>
             </div>
 
-            <div v-if="hasFooter" class="card-footer">
-                <template v-if="hasFooterLine">
-                    <div class="card-footer-line" />
-                </template>
+            <template v-if="hasFooterLine">
+                <div class="card-footer-line" />
+            </template>
 
+            <div v-if="hasFooter" class="card-footer">
                 <div class="card-rating">
                     <template v-if="rating > 0">
                         <div class="card-rating-star">
@@ -356,6 +356,13 @@ export default class Card extends Vue {
                 h3 {
                     @include multi-ellipsis(2, 1.4em);
                 }
+            }
+
+            .card-footer {
+                min-height: 48px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
             }
         }
     }
