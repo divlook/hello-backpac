@@ -11,6 +11,7 @@ $palette: (
     'sunset-orange': #ff4b50,
     'dove-gray': #666,
     'supernova': #ffc501,
+    'orange': #ff6d23,
 );
 
 $color-white: map-get(
@@ -56,6 +57,11 @@ $color-dove-gray: map-get(
 $color-supernova: map-get(
     $map: $palette,
     $key: 'supernova',
+);
+
+$color-orange: map-get(
+    $map: $palette,
+    $key: 'orange',
 );
 
 /*
