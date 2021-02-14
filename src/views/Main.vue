@@ -63,7 +63,7 @@ interface Item {
 export default class Main extends Vue {
     list: Item[] = [
         {
-            thumbnail: 'https://source.unsplash.com/random',
+            thumbnail: 'https://source.unsplash.com/random/400x300',
             label: 'Label 1',
             title: 'Title 1',
             comment: loremIpsum,
@@ -72,7 +72,7 @@ export default class Main extends Vue {
             rating: 1,
         },
         {
-            thumbnail: 'https://source.unsplash.com/random',
+            thumbnail: 'https://source.unsplash.com/random/400x300',
             label: 'Label 2',
             title: 'Title 2',
             price: 10000,
@@ -80,21 +80,21 @@ export default class Main extends Vue {
             rating: 2,
         },
         {
-            thumbnail: 'https://source.unsplash.com/random',
+            thumbnail: 'https://source.unsplash.com/random/400x300',
             label: 'Label 3',
             title: 'Title 3',
             price: 10000,
             discountPer: 90,
         },
         {
-            thumbnail: 'https://source.unsplash.com/random',
+            thumbnail: 'https://source.unsplash.com/random/400x300',
             label: 'Label 4',
             title: 'Title 4',
             comment: loremIpsum,
             rating: 5,
         },
         {
-            thumbnail: 'https://source.unsplash.com/random',
+            thumbnail: 'https://source.unsplash.com/random/400x300',
             label: 'Label 5',
             title: 'Title 5',
             price: 10000,

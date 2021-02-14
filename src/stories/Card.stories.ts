@@ -99,7 +99,7 @@ const Template: Story = (args, { argTypes }) => ({
 
 export const Default = Template.bind({})
 Default.args = {
-    thumbnail: 'https://source.unsplash.com/random',
+    thumbnail: 'https://source.unsplash.com/random/400x300',
     label: 'Label',
     title: 'Title',
     comment: loremIpsum,
@@ -120,7 +120,7 @@ NoThumbnail.args = {
 
 export const NoComment = Template.bind({})
 NoComment.args = {
-    thumbnail: 'https://source.unsplash.com/random',
+    thumbnail: 'https://source.unsplash.com/random/400x300',
     label: 'Label',
     title: 'Title',
     price: 10000,
@@ -130,7 +130,7 @@ NoComment.args = {
 
 export const NoRating = Template.bind({})
 NoRating.args = {
-    thumbnail: 'https://source.unsplash.com/random',
+    thumbnail: 'https://source.unsplash.com/random/400x300',
     label: 'Label',
     title: 'Title',
     price: 10000,
@@ -139,7 +139,7 @@ NoRating.args = {
 
 export const NoDiscountPer = Template.bind({})
 NoDiscountPer.args = {
-    thumbnail: 'https://source.unsplash.com/random',
+    thumbnail: 'https://source.unsplash.com/random/400x300',
     label: 'Label',
     title: 'Title',
     price: 10000,
@@ -147,25 +147,25 @@ NoDiscountPer.args = {
 
 export const NoPrice = Template.bind({})
 NoPrice.args = {
-    thumbnail: 'https://source.unsplash.com/random',
+    thumbnail: 'https://source.unsplash.com/random/400x300',
     label: 'Label',
     title: 'Title',
 }
 
 export const NoLabel = Template.bind({})
 NoLabel.args = {
-    thumbnail: 'https://source.unsplash.com/random',
+    thumbnail: 'https://source.unsplash.com/random/400x300',
     title: 'Title',
 }
 
 export const NoTitle = Template.bind({})
 NoTitle.args = {
-    thumbnail: 'https://source.unsplash.com/random',
+    thumbnail: 'https://source.unsplash.com/random/400x300',
     comment: loremIpsum,
     rating: 1,
 }
 
 export const OnlyThumbnail = Template.bind({})
 OnlyThumbnail.args = {
-    thumbnail: 'https://source.unsplash.com/random',
+    thumbnail: 'https://source.unsplash.com/random/400x300',
 }

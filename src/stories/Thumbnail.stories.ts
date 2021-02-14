@@ -41,24 +41,24 @@ const Template: Story = (args, { argTypes }) => ({
 
 export const Default = Template.bind({})
 Default.args = {
-    image: 'https://source.unsplash.com/random',
+    image: 'https://source.unsplash.com/random/400x300',
 }
 
 export const Ratio = Template.bind({})
 Ratio.args = {
-    image: 'https://source.unsplash.com/random',
+    image: 'https://source.unsplash.com/random/400x300',
     ratio: 3 / 2,
 }
 
 export const Contain = Template.bind({})
 Contain.args = {
-    image: 'https://source.unsplash.com/random',
+    image: 'https://source.unsplash.com/random/400x300',
     contain: true,
 }
 
 export const Color = Template.bind({})
 Color.args = {
-    image: 'https://source.unsplash.com/random',
+    image: 'https://source.unsplash.com/random/400x300',
     contain: true,
     color: 'red',
 }
